@@ -1,0 +1,535 @@
+<html>
+    
+     <head>
+         <meta content = "" descrption "" />
+         <link rel = "icon" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"  />
+
+         <title> 3_02 page </title>
+  
+  <style>
+   
+ body {
+	margin:0px;
+	font-family: sans-serif;
+	}
+
+ .tbl1 {
+        border: 0px ; 
+       width: 100%;  
+       }
+ 
+.sehalogotd{
+	text-align:center;
+	width:11%; 
+	}
+
+.sehalogo {
+        width:85%;
+        height:auto;
+        }
+
+.searchbar {
+         width:65%;
+        padding:6px;
+        }
+.searchbartd {
+        width:55%;  
+        }
+
+.gobtn{
+	color: white;
+	width:13%;
+	background-color:#17c3f3;
+	border-color:#17c3f3;
+	margin-left:-5px;
+	padding:6px;
+	}
+
+.configtd {
+         width:13%;
+         }
+
+.dashboardtd {
+         width:12%;
+         }
+
+.userlisttd {
+         width:10%;
+	}
+
+.aadidp {
+        width:24px;
+	font-size:17px;
+	clip-path:circle();
+	margin-bottom:1px;
+	vertical-align:middle;
+      }
+
+.ddlist {
+
+     margin-top: 7px;
+	margin-left: -4px;
+    	border-width: 0px;
+	font-size:12px;
+	margin-bottom:3px;
+	vertical-align:middle;
+
+       }
+ .ddlist-td{
+	padding: 5px 15px 2px 1px;
+	}
+
+ .maintable td{
+	border: 1px solid;
+	padding:5px;
+	}
+ .maintable{
+	margin-top:11px ;
+	
+	}
+ table.tbla{
+	border: 0px;
+	padding:5px;
+	margin-top:3px;
+        
+	}
+ 
+.inner-table1 td{
+	padding:5px ;
+	border:1px solid;
+	border-color: black;
+	
+	}
+
+	.inner-table1{
+	margin-top:8px;
+	}
+
+	.inner-table1>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+
+	.inner-table1 tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+
+.tbb td{
+
+     border : 0px;
+     padding :7px;
+       }
+.inner-table2 td{
+	border: 1px solid;
+	padding:9px;
+	border-color: black;
+	}
+
+	.inner-table2{
+	margin-top:8px;
+	}
+
+	.inner-table2>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+
+	.inner-table2 tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+
+	th {
+	border: 1px solid;
+	}
+
+  .tbc td{
+	border: 0px;
+	padding:7px;
+	}
+
+ .inner-table3 td{
+	padding:9px;
+	border:1px solid;
+	border-color: black;
+	}
+
+	.inner-table3{
+	margin-top:8px;
+	}
+
+	.inner-table3>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+	
+	.inner-table3 tr:nth-child(even){
+	background-color: #f2f2f2;
+   }
+	
+
+   .tbb-td{
+	vertical-align:top;
+	}
+
+   .tbc-td{
+	vertical-align:top;
+      }
+
+
+   .Avg-timetd{
+	text-align:right;
+	padding:9px;
+	}
+
+	.Avg-timetd{
+	vertical-align:top;
+	}
+
+	.total-sentense{
+	padding-right:35px;
+	}
+
+	.call-ticket-td{
+	text-align:right;
+	
+	}
+
+	.call-ticket-btn{
+	background-color:#42B114;
+	border-width:0px;
+	color:white;
+	padding: 7px;
+    	width: 96px;
+    	height: 27px;
+	border-radius: 2px;
+	}
+
+	
+
+	.callParked-ticket-td{
+	text-align:right;
+	padding: 9px;
+	}
+
+	.callParked-ticket-btn{
+	background-color:#c30f2d;
+	border-width:0px;
+	color:white;
+	padding:7px;
+	height:26px;
+	width:135px;
+	border-radius: 2px;
+	}
+
+
+	.showing-status-span-td{
+	padding: 7px 5px 10px 25px !important;
+	}
+
+	.showing-status-span{
+	background-color:#F5B041;
+	color:white;
+	padding: 0px 5px 1px 5px;
+	font-size:16px;
+	border-radius:3px;
+	}
+
+
+	#sett-rig-icon{
+	background-color:red;
+	color:white;
+	border-radius:50%;
+	padding:4px;
+	}
+	
+	#clockicon123{
+	font-size:14px;
+	}
+	
+	
+ 
+
+
+
+
+ </style>
+
+
+
+
+      </head>
+           
+
+<body>
+ 
+     <table class = "tbl1">
+      <tr>
+      
+          <td class = "sehalogotd" > 
+          <img src = "Images/logo.png" class= "sehalogo" >
+          </td>
+  
+          <td class = "searchbartd" >
+          <input type = "text" placeholder = "search Ticket" class= "searchbar">
+          <button class = "gobtn" > GO </button>
+          </td>
+
+          <td class = "configtd" >
+          <i class="fa-solid fa-gear"></i> Config Settings
+          </td>
+         
+          <td class= "dashboardtd">
+          <i class="fa-solid fa-circle-arrow-right"></i> Dash Board
+          </td>   
+          
+         <td class = "userlisttd" >
+          <img src= "Images/Aadi.jpg" class= "aadidp">
+          <span class = "ddlist-td">
+          <select class= "ddlist">
+           <option>  adarsh   </option>
+           <option>  prem    </option>
+           <option>  sasi    </option>
+           <option>  rohit  </option>
+         </select>
+         </span>
+        </td>
+     </tr>
+ </table>
+       
+          
+  <table class = "maintable" >
+     <tr>
+          <td width="50%" >
+                  <table class= "tbla">
+                     <tr>
+                         <td> Not Served Tickets </td>
+                         <td class="Avg-timetd"><span class="total-sentense"><span class="Avg-time"><b>Average Waiting Time</b><font size="1">                 			(Per Person) </span></font><b><font size="5" color="red">15:02</font></span></b></td>
+		   </tr>
+                 
+                   <tr>
+                        <td class= "clock-td" >
+                         <i class="fa-regular fa-clock fa-rotate-270"></i>Today
+                        </td>
+                     
+                       <td class = "callbutton-td">
+                        <button class = "callbutton" > call Ticket </button>
+                       </td>
+                  </tr>
+           </table>
+
+
+          
+             
+           <table class = "inner-table1">
+                           <tr>
+						
+                                <th>Ticket No.</th>
+				<th>Patient Name</th>
+				<th>MRN No</th>
+				<th>Date & Time</th>
+				<th>Status</th>
+                         </tr>
+
+                           <tr>
+				<td>763648</td>
+				<td>Steve</td>
+				<td>578967</td>
+				<td>Jan 17,2019</td>
+				<td> Waiting </td>
+			 </tr>
+                    
+                         	
+                               <tr>
+                            
+			
+						<td>763651</td>
+						<td>Roger</td>
+						<td>578966</td>
+						<td>Jan 17,2019</td>
+						<td> Waiting For Approval</td>
+						
+						
+
+					</tr>
+
+					<tr>
+						<td>763649</td>
+						<td>Amber</td>
+						<td>578965</td>
+						<td>Jan 17,2019</td>
+						<td> Waiting</td>
+						
+					</tr>
+
+					<tr>
+						<td>763650</td>
+						<td>23452</td>
+						<td>578968</td>
+						<td>Jan 17,2019</td>
+						<td>Not Turned up </td>
+						
+					</tr>
+
+					<tr>
+						<td>763652</td>
+						<td>Smith</td>
+						<td>578957</td>
+						<td>Jan 17,2019</td>
+						<td> Preparing Medication</td>
+						
+						
+					</tr>
+
+		</table>
+           </td>
+ 
+       
+            <td class = "tbb-td" width = "25%" >
+            <table class = "tbb" >
+                         <tr>
+				<td colspan="2">Called and Ready to Dispense</td>
+				
+			</tr>
+
+			<tr>
+				<td class="clock-icon-td">
+				<i class="fa-solid fa-clock" id="clockicon123" ></i> Today
+				</td>
+
+				<td class="call-ticket-td">
+				<button class="call-ticket-btn">Call Ticket</button>
+				</td>
+			</tr>
+
+         </table>
+          		
+		<table class="inner-table2">
+				
+					<tr>
+						<th>Ticket No.</th>
+						<th>Patient Name</th>
+						<th>Date & Time</th>
+						<th>Status</th>
+						
+
+					</tr>
+
+					<tr>
+						<td>763668</td>
+						<td>Steve</td>
+						<td>Jan 17,2019</td>
+						<td>Ready to Dispense</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763669</td>
+						<td>Amber</td>
+						<td>Jan 17,2019</td>
+						<td>Ready to Dispense</td>
+						
+
+					</tr>
+
+		
+		</table>
+             </td>
+    
+		<td class="tbc-td" width="25%">
+		<table class="tabc">
+			<tr>
+				<td>Parked Tickets</td>
+				<td>&nbsp</td>
+			</tr>
+
+			<tr>
+				<td class="clock-icon-td">
+				<i class="fa-solid fa-clock" id="clockicon123"></i> Today
+				</td>
+				<td class="callParked-ticket-td">
+				<button class="callParked-ticket-btn">Call Parked Ticket</button>
+				</td>
+			</tr>
+		</table>
+
+			
+				
+		<table class="inner-table3">
+				
+					<tr>
+						<th>Ticket No.</th>
+						<th>Patient Name</th>
+						<th>Date & Time</th>
+						<th>Status</th>
+						
+
+					</tr>
+
+					<tr>
+						<td>763668</td>
+						<td>Steve</td>
+						<td>Jan 17,2019</td>
+						<td>Not Turned up</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763669</td>
+						<td>Amber</td>
+						<td>Jan 17,2019</td>
+						<td>Waiting For Approval</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763650</td>
+						<td>Michael</td>
+						<td>Jan 17,2019</td>
+						<td>Preparing Medication</td>
+						
+
+					</tr>
+
+		
+		</table>
+		</td>
+			
+
+
+</tr>
+
+
+</table>
+
+</body>
+
+
+</html>
+               
+           
+            
+
+
+
+
+
+
+
+
+
+
+
+
+                      
+                         
+
+ 
+
+
+
+
+    
+
